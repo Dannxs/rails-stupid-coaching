@@ -2,16 +2,16 @@
 <p><%= params[:question] %></p>
 <p>- You</p>
 <hr>
-<p>
-<% if params[:question] == "I am going to work"  %>
-<% a = "Great!"%>
-<% elsif params[:question].end_with?("?") %>
-<% a = "Silly question, get dressed and go to work!"%>
-<% else %>
-<% a = "I don't care, get dressed and go to work!"%>
-<% end %>
-<%= a %>
-</p>
-<p>- Your coach</p>
+  <p>
+    <% if params[:question] == "I am going to work"  %>
+      <% a = "Great!"%>
+    <% elsif params[:question].end_with?("?") %>
+      <% a = "Silly question, get dressed and go to work!"%>
+    <% else %>
+      <% a = "I don't care, get dressed and go to work!"%>
+    <% end %>
+    <%= a %>
+  </p>
+  <p>- Your coach</p>
 <hr>
 <p><%= link_to 'Ask a new quesion', '/ask' %></p>
